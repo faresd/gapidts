@@ -7,7 +7,7 @@ class Schema {
 	constructor(public name:string, public base:model.IJsonSchema) {
 		if (base.type !== "object" && base.type !== "any" && base.type !== "array") {
 			console.error(base);
-			throw new Error("unknown type: " + base.type);
+			// throw new Error("unknown type: " + base.type);
 		}
 	}
 
